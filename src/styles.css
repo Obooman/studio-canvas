@@ -1,0 +1,61 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f8f9;
+}
+
+* { box-sizing: border-box; }
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
+}
+button { font: inherit; cursor: pointer; }
+
+.canvas-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
+  touch-action: none;
+}
+.tl-container,
+.tl-canvas,
+.tl-html-layer,
+.tl-embed-container {
+  overscroll-behavior: none;
+  overscroll-behavior-x: none;
+}
+.tl-container { background: #f7f8f9; }
+.preview-mode,
+.preview-mode * {
+  cursor: default !important;
+}
+
+.preview-mode .tl-embed {
+  z-index: 0 !important;
+  pointer-events: auto !important;
+  overscroll-behavior: none !important;
+}
+
+.preview-mode.preview-pan-mode .tl-embed {
+  pointer-events: none !important;
+}
+
+.laser-overlay {
+  z-index: 30;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.laser-overlay.active {
+  pointer-events: auto;
+  cursor: default;
+}
