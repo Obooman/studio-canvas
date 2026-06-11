@@ -1,7 +1,7 @@
 {
-  "name": "canvas",
+  "name": "studio-canvas",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于 tldraw 的极简暗色画布应用，专为录制演示视频打造",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",

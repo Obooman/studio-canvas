@@ -1,6 +1,7 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f7f8f9;
+  background: #101011;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -30,10 +31,19 @@ button { font: inherit; cursor: pointer; }
   overscroll-behavior: none;
   overscroll-behavior-x: none;
 }
-.tl-container { background: #f7f8f9; }
+.tl-container { background: #101011; }
 .preview-mode,
 .preview-mode * {
   cursor: default !important;
+}
+
+/* Remove the drop shadow and rounded border that tldraw applies to
+   webpage embeds (set inline by the embed shape util). */
+.tl-embed-container .tl-embed,
+.tl-embed {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .preview-mode .tl-embed {

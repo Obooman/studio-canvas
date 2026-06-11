@@ -248,6 +248,7 @@ function CanvasApp() {
         options={editorOptions}
         onMount={setEditor}
         shapeUtils={shapeUtils}
+        colorScheme="dark"
         hideUi
       />
       <LaserOverlay active={isPreview && isLaserActive} />
