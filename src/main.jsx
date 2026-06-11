@@ -245,6 +245,7 @@ function CanvasApp() {
     <main className={`canvas-shell ${isPreview ? 'preview-mode' : ''} ${isPreviewPanning ? 'preview-pan-mode' : ''}`}>
       <Tldraw
         persistenceKey="canvas-studio-document"
+        licenseKey={import.meta.env.VITE_TLDRAW_LICENSE_KEY}
         options={editorOptions}
         onMount={setEditor}
         shapeUtils={shapeUtils}
